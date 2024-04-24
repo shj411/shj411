@@ -21,7 +21,14 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter-web") //mybatis
+	implementation("org.springframework.boot:spring-boot-starter-security") // spring security
+	implementation("org.apache.tomcat.embed:tomcat-embed-jasper") // jsp
+	implementation("javax.servlet:jstl") // jstl
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	compileOnly("org.projectlombok:lombok") // lombok
+	runtimeOnly("org.mariadb.jdbc:mariadb-java-client") // mariadb
+	annotationProcessor("org.projectlombok:lombok") // lombok
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
